@@ -7,10 +7,12 @@ public class Main{
         APowerGenerator generator = new SolarGenerator();
         ThrusterModule thruster = new ThrusterModule();
         ExperimentModule experiment = new ExperimentModule("Test", params);
-        Mothership ship = new Mothership(generator, thruster, experiment);
+        AirLockModule acouple = new AirLockModule(2);
+
+
+        Mothership ship = new Mothership(generator, thruster, experiment, acouple);
         int power = ship.requestPower();
         boolean fired = ship.fireThruster(power);
-
 
 
 

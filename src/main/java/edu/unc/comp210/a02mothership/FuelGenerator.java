@@ -1,6 +1,6 @@
 package edu.unc.comp210.a02mothership;
 
-public abstract class FuelGenerator extends APowerGenerator {
+public class FuelGenerator extends APowerGenerator {
     private int fuel;
 
     public FuelGenerator(int fuel){
@@ -15,6 +15,7 @@ public abstract class FuelGenerator extends APowerGenerator {
 
 
     }
+    
     public int generatePower(){
         if(fuel >=10){
             fuel = fuel - 10;
