@@ -22,7 +22,7 @@ public class ThrusterModule extends AModule {
         else{
             fired = "No";
         }
-        System.out.println("ThrusterModule: "+ fuel + " unit of fuel remaining. Last fired: " + fired );
+        System.out.println(getName()+ ": "+ fuel + " units of fuel remaining. Last fired: " + fired );
     }
     public boolean thrust(int availablePower){
         String fired;
@@ -34,7 +34,7 @@ public class ThrusterModule extends AModule {
         else{
             lastFired = false;
 
-            System.out.println("ThrusterModule: Not enough power or fuel to fire.");
+            System.out.println(getName()+ ": "+  "Not enough power or fuel to fire.");
 
         }
         return lastFired;
