@@ -4,14 +4,15 @@ public abstract class FuelGenerator extends APowerGenerator {
     private int fuel;
 
     public FuelGenerator(int fuel){
-        super("fuelGenerator");
+        super("Fuel Generator");
         this.fuel=fuel;
     }
 
     @Override
     public void statusReport(String moduleStatus, boolean isSuccessful) {
         super.statusReport(moduleStatus, isSuccessful);
-        System.out.println("FuelGenerator: " + fuel + " units of fuel remaining.");
+        System.out.println(getName()+ ": "  + fuel + " units of fuel remaining.");
+
 
     }
     public int generatePower(){
@@ -25,7 +26,6 @@ public abstract class FuelGenerator extends APowerGenerator {
         }
          else{
             int leftoverfuel = fuel;
-            fuel = 0;
             return 0;
         }
 
