@@ -13,10 +13,10 @@ public abstract class AModule {
     public void statusReport(String moduleStatus,boolean isSuccessful){
         System.out.println(name + " is " + moduleStatus);
         if(isSuccessful == true){
-            System.out.println("Action Successful");
+            System.out.println("Action Successful.");
         }
         else {
-            System.out.println(name + " needs immediate attention");
+            System.out.println(name + " needs immediate attention!");
         }
     }
 
