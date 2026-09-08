@@ -5,7 +5,7 @@ public class Main{
     public static void main (String[] args) {
         double[] params = {1.3, 3.3, 6.7};
         APowerGenerator generator = new SolarGenerator();
-        ThrusterModule thruster = new ThrusterModule(13,true);
+        ThrusterModule thruster = new ThrusterModule();
         ExperimentModule experiment = new ExperimentModule("Test", params);
         Mothership ship = new Mothership(generator, thruster, experiment);
         int power = ship.requestPower();

@@ -18,11 +18,15 @@ public abstract class FuelGenerator extends APowerGenerator {
         if(fuel >=10){
             fuel = fuel - 10;
             return 10;
-        }
-        else{
+        } else if (fuel<10&&fuel>0){
             int leftoverfuel = fuel;
             fuel = 0;
             return leftoverfuel;
+        }
+         else{
+            int leftoverfuel = fuel;
+            fuel = 0;
+            return 0;
         }
 
     }

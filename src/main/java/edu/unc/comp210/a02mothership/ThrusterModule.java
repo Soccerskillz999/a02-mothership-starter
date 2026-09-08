@@ -4,7 +4,7 @@ public class ThrusterModule extends AModule {
     private int fuel;
     private boolean lastFired;
 
-    public ThrusterModule(int fuel, boolean lastFired){
+    public ThrusterModule(){
 
         super("thrusterModule");
         this.fuel= 100;
