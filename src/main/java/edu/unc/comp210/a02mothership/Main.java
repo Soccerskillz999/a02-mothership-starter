@@ -14,7 +14,7 @@ public class Main{
 
 
 
-        System.out.println("Power Requested :  " + power );
+        System.out.println("Power Requested : " + power );
         System.out.println("Thruster Fired : " + fired);
         System.out.println(ship.getExperimentSummary());
         ship.printStatusReports();

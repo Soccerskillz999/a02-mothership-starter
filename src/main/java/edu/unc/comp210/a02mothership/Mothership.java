@@ -42,9 +42,9 @@ public class Mothership {
         }
     }
     public Mothership(APowerGenerator powerGenerator, ThrusterModule thrusterModule,
-                      ExperimentModule experimentModule, AModule AirLockModule) {
+                      ExperimentModule experimentModule, AModule airLockModule) {
         this(powerGenerator, thrusterModule, experimentModule);
 
-        shipModules.add(AirLockModule);
+        shipModules.add(airLockModule);
     }
 }

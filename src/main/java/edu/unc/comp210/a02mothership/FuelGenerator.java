@@ -25,7 +25,6 @@ public abstract class FuelGenerator extends APowerGenerator {
             return leftoverfuel;
         }
          else{
-            int leftoverfuel = fuel;
             return 0;
         }
 
