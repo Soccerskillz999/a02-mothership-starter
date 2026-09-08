@@ -1,6 +1,6 @@
 package edu.unc.comp210.a02mothership;
 
-public abstract class FuelGenerator extends AModule {
+public abstract class FuelGenerator extends APowerGenerator {
     private int fuel;
 
     public FuelGenerator(int fuel){
