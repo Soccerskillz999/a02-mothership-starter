@@ -33,7 +33,7 @@ public class Mothership {
         experimentModule.runExperiment();
     }
     String getExperimentSummary(){
-        return experimentModule.getSummery();
+        return experimentModule.getSummary();
     }
     public void printStatusReports(){
         for(int i = 0; i < shipModules.size(); i++) {
